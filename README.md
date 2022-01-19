@@ -16,7 +16,8 @@ After removing those, the new AOV should be $151.68.
 <li><b>What metric would you report for this dataset?</b></li>
 I would use the median of the middle 50% of the dataset. This new metric would allow me to consider only the values that make up the middle 50% of the dataset (thereby dropping from consideration values that are very low or very high).
 <p></p>
-<li>What is its value?</li>
+<li><b>What is its value?</b></li>
+280.0
 </ul>
 <p></p>
 <h3>Question 2</h3>
@@ -25,7 +26,9 @@ I would use the median of the middle 50% of the dataset. This new metric would a
 For this question you’ll need to use SQL. Follow <a href='https://www.w3schools.com/SQL/TRYSQL.ASP?FILENAME=TRYSQL_SELECT_ALL'>this link</a> to access the data set required for the challenge. Please use queries to answer the following questions. Paste your queries along with your final numerical answers below.
 
 <ul>
-<li>How many orders were shipped by Speedy Express in total?</li>
-<li>What is the last name of the employee with the most orders?</li>
-<li>What product was ordered the most by customers in Germany?</li>
+<li><b>How many orders were shipped by Speedy Express in total?</b></li>
+<p></p>  
+<li><b>What is the last name of the employee with the most orders?</b></li>
+<p></p>
+<li><b>What product was ordered the most by customers in Germany?</b></li>
 </ul>
