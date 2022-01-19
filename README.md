@@ -27,7 +27,7 @@ For this question you’ll need to use SQL. Follow <a href='https://www.w3school
 
 <ul>
 <li><b>How many orders were shipped by Speedy Express in total?</b></li>
-Code: 
+Code: <br>
 SELECT COUNT(Orders.OrderID) as 'Speedy Count'
 FROM Orders INNER 
 JOIN Shippers 
@@ -37,7 +37,7 @@ WHERE Shippers.ShipperName = 'Speedy Express';
 In total, 54 orders were shipped by Speedy Express.  
 <p></p>  
 <li><b>What is the last name of the employee with the most orders?</b></li>
-Code:
+Code: <br>
 (SELECT *, COUNT(DISTINCT OrderID) AS NetOrders 
 FROM (SELECT o.OrderID, e.EmployeeID, e.LastName, e.FirstName
 FROM Orders o Inner JOIN Employees e
@@ -48,7 +48,7 @@ ORDER BY COUNT(DISTINCT OrderID) DESC);
 The last name of the employee is Peacock, and the number of orders is 40.
 <p></p>
 <li><b>What product was ordered the most by customers in Germany?</b></li>
-Code:
+Code:<br>
 SELECT p.ProductName, SUM(Quantity) AS TotalQuantity
 FROM Orders AS o, OrderDetails AS od, Customers AS c, Products AS p
 WHERE c.Country = "Germany" AND od.OrderID = o.OrderID AND od.ProductID = p.ProductID AND c.CustomerID = o.CustomerID
