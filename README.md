@@ -8,7 +8,11 @@ Given some sample data, write a program to answer the following:
 On Shopify, we have exactly 100 sneaker shops, and each of these shops sells only one model of shoe. We want to do some analysis of the average order value (AOV). When we look at orders data over a 30 day window, we naively calculate an AOV of $3145.13. Given that we know these shops are selling sneakers, a relatively affordable item, something seems wrong with our analysis. 
 
 <ul>
-<li>Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.</li>
+<li><b>Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.</b></li>
+The initial calculation considers the mean of all order amount. However, while exploring the data, outliers have impacted the final result. 
+<br>
+After removing those, the new AOV should be $151.68.
+<p></p>  
 <li>What metric would you report for this dataset?</li>
 <li>What is its value?</li>
 </ul>
