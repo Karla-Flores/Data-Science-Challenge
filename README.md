@@ -9,11 +9,13 @@ On Shopify, we have exactly 100 sneaker shops, and each of these shops sells onl
 
 <ul>
 <li><b>Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.</b></li>
-The initial calculation considers the mean of all order amount. However, while exploring the data, outliers have impacted the final result. 
-<br>
+The initial calculation considers the mean of all order amount. However, while exploring the data, outliers have impacted the final result, like the user_id 607 with an average purchase amount of $70 4000.0. Or the order_id 692 and 3725 with $154 350 and $77 175 respectively. Another outlier was the shop_id 78, with a purchase average of $46 188.06.
+<p></p> 
 After removing those, the new AOV should be $151.68.
 <p></p>  
-<li>What metric would you report for this dataset?</li>
+<li><b>What metric would you report for this dataset?</b></li>
+I would use the median of the middle 50% of the dataset. This new metric would allow me to consider only the values that make up the middle 50% of the dataset (thereby dropping from consideration values that are very low or very high).
+<p></p>
 <li>What is its value?</li>
 </ul>
 <p></p>
